@@ -10,7 +10,7 @@
 @endsection
 
 @section('content')
-    {{ Form::model($faq, ['route' => ['admin.faqs.update', $faq], 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'PATCH', 'id' => 'edit-faqs']) }}
+    {{ Form::model($faq, ['route' => ['admincp.faqs.update', $faq], 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'PATCH', 'id' => 'edit-faqs']) }}
 
         <div class="box box-info">
             <div class="box-header with-border">
@@ -26,7 +26,7 @@
                 <div class="form-group">
                     @include("backend.faqs.form")
                     <div class="edit-form-btn">
-                    {{ link_to_route('admin.faqs.index', trans('buttons.general.cancel'), [], ['class' => 'btn btn-danger btn-md']) }}
+                    {{ link_to_route('admincp.faqs.index', trans('buttons.general.cancel'), [], ['class' => 'btn btn-danger btn-md']) }}
                     {{ Form::submit(trans('buttons.general.crud.update'), ['class' => 'btn btn-primary btn-md']) }}
                     <div class="clearfix"></div>
                 </div>

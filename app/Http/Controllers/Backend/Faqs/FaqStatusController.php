@@ -31,7 +31,7 @@ class FaqStatusController extends Controller
         $this->faq->mark($faq, $status);
 
         return redirect()
-            ->route('admin.faqs.index')
+            ->route('admincp.faqs.index')
             ->with('flash_success', trans('alerts.backend.faqs.updated'));
     }
 }

@@ -10,7 +10,7 @@
 @endsection
 
 @section('content')
-    {{ Form::model($page, ['route' => ['admin.pages.update', $page], 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'PATCH', 'id' => 'edit-role']) }}
+    {{ Form::model($page, ['route' => ['admincp.pages.update', $page], 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'PATCH', 'id' => 'edit-role']) }}
 
         <div class="box box-info">
             <div class="box-header with-border">
@@ -83,7 +83,7 @@
                     </div><!--col-lg-3-->
                 </div><!--form control-->
                 <div class="edit-form-btn">
-                    {{ link_to_route('admin.pages.index', trans('buttons.general.cancel'), [], ['class' => 'btn btn-danger btn-md']) }}
+                    {{ link_to_route('admincp.pages.index', trans('buttons.general.cancel'), [], ['class' => 'btn btn-danger btn-md']) }}
                     {{ Form::submit(trans('buttons.general.crud.update'), ['class' => 'btn btn-primary btn-md']) }}
                     <div class="clearfix"></div>
                 </div>

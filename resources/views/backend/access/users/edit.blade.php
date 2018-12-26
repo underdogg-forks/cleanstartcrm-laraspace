@@ -10,7 +10,7 @@
 @endsection
 
 @section('content')
-    {{ Form::model($user, ['route' => ['admin.access.user.update', $user], 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'PATCH']) }}
+    {{ Form::model($user, ['route' => ['admincp.access.user.update', $user], 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'PATCH']) }}
 
         <div class="box box-info">
             <div class="box-header with-border">
@@ -147,7 +147,7 @@
 
                 @endif
                 <div class="edit-form-btn">
-                    {{ link_to_route('admin.access.user.index', trans('buttons.general.cancel'), [], ['class' => 'btn btn-danger btn-md']) }}
+                    {{ link_to_route('admincp.access.user.index', trans('buttons.general.cancel'), [], ['class' => 'btn btn-danger btn-md']) }}
                     {{ Form::submit(trans('buttons.general.crud.update'), ['class' => 'btn btn-primary btn-md']) }}
                     <div class="clearfix"></div>
                 </div>
@@ -167,7 +167,7 @@
     <script type="text/javascript">
         Backend.Utils.documentReady(function(){
             csrf = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
-            Backend.Users.selectors.getPremissionURL = "{{ route('admin.get.permission') }}";
+            Backend.Users.selectors.getPremissionURL = "{{ route('admincp.get.permission') }}";
             Backend.Users.init("edit");
         });
         window.onload = function () {

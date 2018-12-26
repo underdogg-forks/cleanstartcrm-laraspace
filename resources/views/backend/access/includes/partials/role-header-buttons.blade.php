@@ -21,9 +21,9 @@
     <span class="sr-only">Toggle Dropdown</span>
   </button>
   <ul class="dropdown-menu" role="menu">
-    <li><a href="{{route('admin.access.role.index')}}"><i class="fa fa-list-ul"></i> {{trans('menus.backend.access.roles.all')}}</a></li>
+    <li><a href="{{route('admincp.access.role.index')}}"><i class="fa fa-list-ul"></i> {{trans('menus.backend.access.roles.all')}}</a></li>
     @permission('create-role')
-    <li><a href="{{route('admin.access.role.create')}}"><i class="fa fa-plus"></i> {{trans('menus.backend.access.roles.create')}}</a></li>
+    <li><a href="{{route('admincp.access.role.create')}}"><i class="fa fa-plus"></i> {{trans('menus.backend.access.roles.create')}}</a></li>
     @endauth
   </ul>
 </div>

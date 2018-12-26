@@ -1,16 +1,16 @@
 <?php
 
-Breadcrumbs::register('admin.faqs.index', function ($breadcrumbs) {
-    $breadcrumbs->parent('admin.dashboard');
-    $breadcrumbs->push(trans('menus.backend.faqs.management'), route('admin.faqs.index'));
+Breadcrumbs::register('admincp.faqs.index', function ($breadcrumbs) {
+    $breadcrumbs->parent('admincp.dashboard');
+    $breadcrumbs->push(trans('menus.backend.faqs.management'), route('admincp.faqs.index'));
 });
 
-Breadcrumbs::register('admin.faqs.create', function ($breadcrumbs) {
-    $breadcrumbs->parent('admin.faqs.index');
-    $breadcrumbs->push(trans('menus.backend.faqs.create'), route('admin.faqs.create'));
+Breadcrumbs::register('admincp.faqs.create', function ($breadcrumbs) {
+    $breadcrumbs->parent('admincp.faqs.index');
+    $breadcrumbs->push(trans('menus.backend.faqs.create'), route('admincp.faqs.create'));
 });
 
-Breadcrumbs::register('admin.faqs.edit', function ($breadcrumbs, $id) {
-    $breadcrumbs->parent('admin.faqs.index');
-    $breadcrumbs->push(trans('menus.backend.faqs.edit'), route('admin.faqs.edit', $id));
+Breadcrumbs::register('admincp.faqs.edit', function ($breadcrumbs, $id) {
+    $breadcrumbs->parent('admincp.faqs.index');
+    $breadcrumbs->push(trans('menus.backend.faqs.edit'), route('admincp.faqs.edit', $id));
 });

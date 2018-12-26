@@ -77,7 +77,7 @@
             }, 500);
         });
         $("#showMenuModal").on('show.bs.modal', function () {
-            $.get("{{ route('admin.menus.getform') }}/" + formName, function(data, status){
+            $.get("{{ route('admincp.menus.getform') }}/" + formName, function(data, status){
                 if(status == "success") {
                     $("#showMenuModal").find(".modal-dialog .modal-content .modal-body").html(data);
                 }

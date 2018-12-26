@@ -71,7 +71,7 @@ class EmailTemplatesController extends Controller
     {
         $this->emailtemplates->update($emailtemplate, $request->except(['_method', '_token', 'placeholder']));
 
-        return redirect()->route('admin.emailtemplates.index')
+        return redirect()->route('admincp.emailtemplates.index')
             ->withFlashSuccess(trans('alerts.backend.emailtemplates.updated'));
     }
 
@@ -86,7 +86,7 @@ class EmailTemplatesController extends Controller
     {
         $this->emailtemplates->delete($emailtemplate);
 
-        return redirect()->route('admin.emailtemplates.index')
+        return redirect()->route('admincp.emailtemplates.index')
             ->withFlashSuccess(trans('alerts.backend.emailtemplates.deleted'));
     }
 }

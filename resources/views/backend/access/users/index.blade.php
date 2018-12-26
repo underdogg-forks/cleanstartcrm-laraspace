@@ -93,7 +93,7 @@
                 processing: true,
                 serverSide: true,
                 ajax: {
-                    url: '{{ route("admin.access.user.get") }}',
+                    url: '{{ route("admincp.access.user.get") }}',
                     type: 'post',
                     data: {status: 1, trashed: false}
                 },

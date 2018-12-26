@@ -49,7 +49,7 @@
 
                         <ul class="dropdown-menu" role="menu">
                             @permission('view-backend')
-                                <li>{{ link_to_route('admin.dashboard', trans('navs.frontend.user.administration')) }}</li>
+                                <li>{{ link_to_route('admincp.dashboard', trans('navs.frontend.user.administration')) }}</li>
                             @endauth
 
                             <li>{{ link_to_route('frontend.user.account', trans('navs.frontend.user.account')) }}</li>

@@ -12,7 +12,7 @@ trait EmailTemplateAttribute
      */
     public function getActionButtonsAttribute()
     {
-        return '<div class="btn-group action-btn">'.$this->getEditButtonAttribute('edit-email-template', 'admin.emailtemplates.edit').'</div>';
+        return '<div class="btn-group action-btn">'.$this->getEditButtonAttribute('edit-email-template', 'admincp.emailtemplates.edit').'</div>';
     }
 
     /**

@@ -41,7 +41,7 @@ class LoginController extends Controller
     public function redirectPath()
     {
         if (access()->allow('view-backend')) {
-            return route('admin.dashboard');
+            return route('admincp.dashboard');
         }
 
         return route('frontend.user.dashboard');
@@ -154,7 +154,7 @@ class LoginController extends Controller
             access()->loginUsingId((int) $admin_id);
 
             //Redirect to backend user page
-            return redirect()->route('admin.access.user.index');
+            return redirect()->route('admincp.access.user.index');
         } else {
             app()->make(Auth::class)->flushTempSession();
 

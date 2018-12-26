@@ -72,7 +72,7 @@
                 processing: true,
                 serverSide: true,
                 ajax: {
-                    url: '{{ route("admin.blogs.get") }}',
+                    url: '{{ route("admincp.blogs.get") }}',
                     type: 'post'
                 },
                 columns: [

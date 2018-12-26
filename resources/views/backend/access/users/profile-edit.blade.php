@@ -9,7 +9,7 @@
 @endsection
 
 @section('content')
-	{{ Form::model($logged_in_user, ['route' => 'admin.profile.update', 'class' => 'form-horizontal', 'method' => 'PATCH']) }}
+	{{ Form::model($logged_in_user, ['route' => 'admincp.profile.update', 'class' => 'form-horizontal', 'method' => 'PATCH']) }}
 
      <div class="box box-info">
         <div class="box-header with-border">

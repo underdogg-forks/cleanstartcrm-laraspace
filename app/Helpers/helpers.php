@@ -27,7 +27,7 @@ if (!function_exists('homeRoute')) {
     function homeRoute()
     {
         if (access()->allow('view-backend')) {
-            return 'admin.dashboard';
+            return 'admincp.dashboard';
         } elseif (auth()->check()) {
             return 'frontend.user.dashboard';
         }

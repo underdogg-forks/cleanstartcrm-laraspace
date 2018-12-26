@@ -78,7 +78,7 @@ class BlogsController extends Controller
         $this->blog->create($request->except('_token'));
 
         return redirect()
-            ->route('admin.blogs.index')
+            ->route('admincp.blogs.index')
             ->with('flash_success', trans('alerts.backend.blogs.created'));
     }
 
@@ -119,7 +119,7 @@ class BlogsController extends Controller
         $this->blog->update($blog, $request->except(['_token', '_method']));
 
         return redirect()
-            ->route('admin.blogs.index')
+            ->route('admincp.blogs.index')
             ->with('flash_success', trans('alerts.backend.blogs.updated'));
     }
 
@@ -134,7 +134,7 @@ class BlogsController extends Controller
         $this->blog->delete($blog);
 
         return redirect()
-            ->route('admin.blogs.index')
+            ->route('admincp.blogs.index')
             ->with('flash_success', trans('alerts.backend.blogs.deleted'));
     }
 }

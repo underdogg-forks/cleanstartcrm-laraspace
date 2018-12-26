@@ -71,7 +71,7 @@
                 processing: true,
                 serverSide: true,
                 ajax: {
-                    url: '{{ route("admin.menus.get") }}',
+                    url: '{{ route("admincp.menus.get") }}',
                     type: 'post'
                 },
                 columns: [

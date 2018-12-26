@@ -72,7 +72,7 @@
                 processing: true,
                 serverSide: true,
                 ajax: {
-                    url: '{{ route("admin.access.permission.get") }}',
+                    url: '{{ route("admincp.access.permission.get") }}',
                     type: 'post'
                 },
                 columns: [

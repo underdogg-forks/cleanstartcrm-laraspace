@@ -16,7 +16,7 @@ class CreateMenuRequest extends Request
      */
     public function authorize()
     {
-        return access()->allow('create-menu');
+        return true;
     }
 
     /**

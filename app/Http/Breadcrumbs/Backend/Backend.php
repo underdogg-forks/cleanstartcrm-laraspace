@@ -1,7 +1,7 @@
 <?php
 
-Breadcrumbs::register('admin.dashboard', function ($breadcrumbs) {
-    $breadcrumbs->push('Dashboard', route('admin.dashboard'));
+Breadcrumbs::register('admincp.dashboard', function ($breadcrumbs) {
+    $breadcrumbs->push('Dashboard', route('admincp.dashboard'));
 });
 
 require __DIR__.'/Search.php';

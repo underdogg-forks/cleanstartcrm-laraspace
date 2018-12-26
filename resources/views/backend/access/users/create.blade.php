@@ -10,7 +10,7 @@
 @endsection
 
 @section('content')
-    {{ Form::open(['route' => 'admin.access.user.store', 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'post']) }}
+    {{ Form::open(['route' => 'admincp.access.user.store', 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'post']) }}
 
         <div class="box box-info">
             <div class="box-header with-border">
@@ -169,7 +169,7 @@
 
                 {{-- Buttons --}}
                 <div class="edit-form-btn">
-                    {{ link_to_route('admin.access.user.index', trans('buttons.general.cancel'), [], ['class' => 'btn btn-danger btn-md']) }}
+                    {{ link_to_route('admincp.access.user.index', trans('buttons.general.cancel'), [], ['class' => 'btn btn-danger btn-md']) }}
                     {{ Form::submit(trans('buttons.general.crud.create'), ['class' => 'btn btn-primary btn-md']) }}
                     <div class="clearfix"></div>
                 </div>
@@ -184,7 +184,7 @@
 
 
         Backend.Utils.documentReady(function(){
-            Backend.Users.selectors.getPremissionURL = "{{ route('admin.get.permission') }}";
+            Backend.Users.selectors.getPremissionURL = "{{ route('admincp.get.permission') }}";
             Backend.Users.init("create");
         });
 

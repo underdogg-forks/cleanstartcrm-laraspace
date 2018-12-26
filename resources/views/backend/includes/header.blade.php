@@ -3,19 +3,19 @@
     <a href="{{ route('frontend.index') }}" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini">
-           {{ substr(app_name(), 0, 1) }}
+            {{ substr(app_name(), 0, 1) }}
         </span>
 
         <!-- logo for regular state and mobile devices -->
         <span class="logo-lg">
-           {{--  @php
-                 $settings = settings();
+            {{-- @php
+            $settings = settings();
             @endphp
             @if($settings->logo)
-                <img height="48" width="226" class="navbar-brand" src="{{route('frontend.index')}}/img/site_logo/{{$settings->logo}}">
+            <img height="48" width="226" class="navbar-brand" src="{{route('frontend.index')}}/img/site_logo/{{$settings->logo}}">
             @else --}}
-                {{ app_name() }}
-           {{--  @endif --}}
+            {{ app_name() }}
+            {{-- @endif --}}
         </span>
     </a>
 
@@ -28,12 +28,12 @@
             <ul class="nav navbar-nav">
 
                 @if (config('locale.status') && count(config('locale.languages')) > 1)
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            <i class="fa fa-language"></i> {{ trans('menus.language-picker.language') }} <span class="caret"></span>
-                        </a>
-                        @include('includes.partials.lang')
-                    </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        <i class="fa fa-language"></i> {{ trans('menus.language-picker.language') }} <span class="caret"></span>
+                    </a>
+                    @include('includes.partials.lang')
+                </li>
                 @endif
 
                 <li class="dropdown messages-menu">
@@ -43,7 +43,8 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li class="header">{{ trans_choice('strings.backend.general.you_have.messages', 0, ['number' => 0]) }}</li>
+                        <li class="header">{{ trans_choice('strings.backend.general.you_have.messages', 0, ['number' =>
+                            0]) }}</li>
                         <li class="footer">
                             {{ link_to('#', trans('strings.backend.general.see_all.messages')) }}
                         </li>
@@ -67,7 +68,8 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li class="header">{{ trans_choice('strings.backend.general.you_have.tasks', 0, ['number' => 0]) }}</li>
+                        <li class="header">{{ trans_choice('strings.backend.general.you_have.tasks', 0, ['number' =>
+                            0]) }}</li>
                         <li class="footer">
                             {{ link_to('#', trans('strings.backend.general.see_all.tasks')) }}
                         </li>
@@ -76,7 +78,7 @@
 
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="{{ access()->user()->picture }}" class="user-image" alt="User Avatar"/>
+                        <img src="{{ access()->user()->picture }}" class="user-image" alt="User Avatar" />
                         <span class="hidden-xs">{{ access()->user()->first_name }}</span>
                         <div class="clearfix"></div>
                     </a>
@@ -85,19 +87,22 @@
                         <li class="user-header">
                             <img src="{{ access()->user()->picture }}" class="img-circle" alt="User Avatar" />
                             <p>
-                                {{-- access()->user()->name }} - {{ implode(", ", access()->user()->roles->lists('name')->toArray()) --}}
-                                <small>{{ trans('strings.backend.general.member_since') }} {{ access()->user()->created_at->format("m/d/Y") }}</small>
+                                {{-- access()->user()->name }} - {{ implode(", ",
+                                access()->user()->roles->lists('name')->toArray()) --}}
+                                <small>{{ trans('strings.backend.general.member_since') }} {{
+                                    access()->user()->created_at->format("m/d/Y") }}</small>
                             </p>
                         </li>
 
                         <li class="user-body">
                             <div class="col-xs-12 text-center">
-                                {{ link_to_route("admin.profile.edit", 'Edit Profile') }}
+                                {{ link_to_route("admincp.profile.edit", 'Edit Profile') }}
                             </div>
                         </li>
                         <li class="user-body border-left">
                             <div class="col-xs-12 text-center">
-                                {{ link_to_route('admin.access.user.change-password','Change Password', access()->user()->id) }}
+                                {{ link_to_route('admincp.access.user.change-password','Change Password',
+                                access()->user()->id) }}
                             </div>
                             {{-- <div class="col-xs-4 text-center">
                                 {{ link_to_route('dashboard', 'Link') }}
@@ -119,6 +124,11 @@
                             </div>
                         </li>
                     </ul>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-toggle" data-toggle="control-sidebar" role="button">
+                        <span class="sr-only">{{ trans('labels.general.toggle_navigation') }}</span>
+                    </a>
                 </li>
             </ul>
         </div><!-- /.navbar-custom-menu -->

@@ -10,23 +10,39 @@
     ],
     "license": "MIT",
     "type": "project",
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "php": ">=7.0.0",
         "arcanedev/log-viewer": "^4.4",
         "arcanedev/no-captcha": "^5.0",
+        "barryvdh/laravel-ide-helper": "^2.4",
         "codedungeon/phpunit-result-printer": "0.4.4",
         "creativeorange/gravatar": "~1.0",
         "davejamesmiller/laravel-breadcrumbs": "^4.1",
         "doctrine/dbal": "^2.6",
         "fideloper/proxy": "~3.3",
         "hieu-le/active": "^3.5",
+        "cleverit/ubl_invoice": "1.*",
+        "infyomlabs/adminlte-templates": "5.5.*",
+        "infyomlabs/laravel-generator": "5.5.*",
+        "infyomlabs/swagger-generator": "dev-master",
         "laravel/framework": "5.5.*",
         "laravel/socialite": "^3.0",
         "laravel/tinker": "~1.0",
+        "nwidart/laravel-modules": "4.*",
         "laravelcollective/html": "^5.5.0",
         "tymon/jwt-auth": "dev-develop",
         "unisharp/laravel-filemanager": "~1.8",
-        "yajra/laravel-datatables-oracle": "~8.0"
+        "yajra/laravel-datatables-buttons": "^4.4",
+        "yajra/laravel-datatables-fractal": "^1.2",
+        "yajra/laravel-datatables-html": "^3.12",
+        "yajra/laravel-datatables-oracle": "^8.9"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.0",
@@ -55,12 +71,8 @@
         "psr-4": {
             "Tests\\": "tests/"
         },
-        "classmap": [
-            "tests/TestCase.php"
-        ],
-        "files": [
-            "tests/Utilities/helpers.php"
-        ]
+        "classmap": [],
+        "files": []
     },
     "scripts": {
         "post-root-package-install": [
@@ -81,10 +93,5 @@
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover"
         ]
-    },
-    "config": {
-        "preferred-install": "dist",
-        "sort-packages": true,
-        "optimize-autoloader": true
     }
 }

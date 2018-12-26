@@ -88,7 +88,7 @@
                 processing: true,
                 serverSide: true,
                 ajax: {
-                    url: '{{ route("admin.emailtemplates.get") }}',
+                    url: '{{ route("admincp.emailtemplates.get") }}',
                     type: 'post'
                 },
                 columns: [

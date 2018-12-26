@@ -10,7 +10,7 @@
 @endsection 
 
 @section('content') 
-{{ Form::model($setting, ['route' => ['admin.settings.update', $setting], 'class' => 'form-horizontal',
+{{ Form::model($setting, ['route' => ['admincp.settings.update', $setting], 'class' => 'form-horizontal',
 'role' => 'form', 'method' => 'PATCH','files' => true, 'id' => 'edit-settings']) }}
 
 <div class="box box-info">
@@ -245,7 +245,7 @@
 <script>
 	(function(){
 		Backend.Utils.csrf = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
-		Backend.Settings.selectors.RouteURL = "{{ route('admin.removeIcon', -1) }}";
+		Backend.Settings.selectors.RouteURL = "{{ route('admincp.removeIcon', -1) }}";
 		Backend.Settings.init();
 		
 	})();
@@ -254,7 +254,7 @@
 		
 	}
 	/*
-	var route = "{{ route('admin.removeIcon', -1) }}";
+	var route = "{{ route('admincp.removeIcon', -1) }}";
     var data_id = $('#setting').data('id');
     
     route = route.replace('-1', data_id);

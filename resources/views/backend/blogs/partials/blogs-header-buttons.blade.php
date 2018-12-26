@@ -21,9 +21,9 @@
     <span class="sr-only">Toggle Dropdown</span>
   </button>
   <ul class="dropdown-menu" role="menu">
-    <li><a href="{{route('admin.blogs.index')}}"><i class="fa fa-list-ul"></i> {{trans('menus.backend.blogs.all')}}</a></li>
+    <li><a href="{{route('admincp.blogs.index')}}"><i class="fa fa-list-ul"></i> {{trans('menus.backend.blogs.all')}}</a></li>
     @permission('create-blog')
-    <li><a href="{{route('admin.blogs.create')}}"><i class="fa fa-plus"></i> {{trans('menus.backend.blogs.create')}}</a></li>
+    <li><a href="{{route('admincp.blogs.create')}}"><i class="fa fa-plus"></i> {{trans('menus.backend.blogs.create')}}</a></li>
     @endauth
   </ul>
 </div>

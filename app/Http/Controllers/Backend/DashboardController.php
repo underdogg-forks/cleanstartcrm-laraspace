@@ -47,7 +47,7 @@ class DashboardController extends Controller
         $user->updated_by = access()->user()->id;
 
         if ($user->save()) {
-            return redirect()->route('admin.profile.edit')
+            return redirect()->route('admincp.profile.edit')
                 ->withFlashSuccess(trans('labels.backend.profile_updated'));
         }
     }

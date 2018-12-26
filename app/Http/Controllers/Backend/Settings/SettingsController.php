@@ -46,7 +46,7 @@ class SettingsController extends Controller
         $this->settings->update($setting, $request->except(['_token', '_method']));
 
         return redirect()
-            ->route('admin.settings.edit', $setting->id)
+            ->route('admincp.settings.edit', $setting->id)
             ->with('flash_success', trans('alerts.backend.settings.updated'));
     }
 }

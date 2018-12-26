@@ -21,9 +21,9 @@
     <span class="sr-only">Toggle Dropdown</span>
   </button>
   <ul class="dropdown-menu" role="menu">
-    <li><a href="{{route('admin.pages.index')}}"><i class="fa fa-list-ul"></i> {{trans('menus.backend.pages.all')}}</a></li>
+    <li><a href="{{route('admincp.pages.index')}}"><i class="fa fa-list-ul"></i> {{trans('menus.backend.pages.all')}}</a></li>
     @permission('create-page')
-    <li><a href="{{route('admin.pages.create')}}"><i class="fa fa-plus"></i> {{trans('menus.backend.pages.create')}}</a></li>
+    <li><a href="{{route('admincp.pages.create')}}"><i class="fa fa-plus"></i> {{trans('menus.backend.pages.create')}}</a></li>
     @endauth
   </ul>
 </div>

@@ -74,7 +74,7 @@
                 processing: true,
                 serverSide: true,
                 ajax: {
-                    url: '{{ route("admin.access.role.get") }}',
+                    url: '{{ route("admincp.access.role.get") }}',
                     type: 'post'
                 },
                 columns: [

@@ -126,7 +126,7 @@
 @section("after-scripts")
     <script type="text/javascript">
 
-        Backend.Blog.selectors.GenerateSlugUrl = "{{route('admin.generate.slug')}}";
+        Backend.Blog.selectors.GenerateSlugUrl = "{{route('admincp.generate.slug')}}";
         Backend.Blog.selectors.SlugUrl = "{{url('/')}}";
         Backend.Blog.init();
         

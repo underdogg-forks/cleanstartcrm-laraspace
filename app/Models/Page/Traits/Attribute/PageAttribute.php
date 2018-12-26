@@ -13,9 +13,9 @@ trait PageAttribute
     public function getActionButtonsAttribute()
     {
         return '<div class="btn-group action-btn">
-                    '.$this->getEditButtonAttribute('edit-page', 'admin.pages.edit').'
+                    '.$this->getEditButtonAttribute('edit-page', 'admincp.pages.edit').'
                     '.$this->getViewButtonAttribute().'                    
-                    '.$this->getDeleteButtonAttribute('delete-page', 'admin.pages.destroy').'
+                    '.$this->getDeleteButtonAttribute('delete-page', 'admincp.pages.destroy').'
                 </div>';
     }
 

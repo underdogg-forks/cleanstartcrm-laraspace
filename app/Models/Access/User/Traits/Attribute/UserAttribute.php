@@ -107,7 +107,7 @@ trait UserAttribute
     public function getShowButtonAttribute($class)
     {
         if (access()->allow('show-user')) {
-            return '<a class="'.$class.'" href="'.route('admin.access.user.show', $this).'">
+            return '<a class="'.$class.'" href="'.route('admincp.access.user.show', $this).'">
                     <i data-toggle="tooltip" data-placement="top" title="View" class="fa fa-eye"></i>
                 </a>';
         }
@@ -119,7 +119,7 @@ trait UserAttribute
     public function getEditButtonAttribute($class)
     {
         if (access()->allow('edit-user')) {
-            return '<a class="'.$class.'" href="'.route('admin.access.user.edit', $this).'">
+            return '<a class="'.$class.'" href="'.route('admincp.access.user.edit', $this).'">
                     <i data-toggle="tooltip" data-placement="top" title="Edit" class="fa fa-pencil"></i>
                 </a>';
         }
@@ -131,7 +131,7 @@ trait UserAttribute
     public function getChangePasswordButtonAttribute($class)
     {
         if (access()->user()->id == $this->id && access()->allow('edit-user')) {
-            return '<a class="'.$class.'" href="'.route('admin.access.user.change-password', $this).'">
+            return '<a class="'.$class.'" href="'.route('admincp.access.user.change-password', $this).'">
                         <i class="fa fa-refresh" data-toggle="tooltip" data-placement="top" title="'.trans('buttons.backend.access.users.change_password').'">
                         </i>
                     </a>';
@@ -149,7 +149,7 @@ trait UserAttribute
                     if (access()->allow('activate-user')) {
                         $name = $class == '' ? 'Active' : '';
 
-                        return '<a class="'.$class.'" href="'.route('admin.access.user.mark', [$this, 1]).'"><i class="fa fa-check-square" data-toggle="tooltip" data-placement="top" title="'.trans('buttons.backend.access.users.activate').'"></i>'.$name.'</a>';
+                        return '<a class="'.$class.'" href="'.route('admincp.access.user.mark', [$this, 1]).'"><i class="fa fa-check-square" data-toggle="tooltip" data-placement="top" title="'.trans('buttons.backend.access.users.activate').'"></i>'.$name.'</a>';
                     }
                 // No break
 
@@ -157,7 +157,7 @@ trait UserAttribute
                     if (access()->allow('deactivate-user')) {
                         $name = ($class == '') ? 'Deactive' : '';
 
-                        return '<a class="'.$class.'" href="'.route('admin.access.user.mark', [$this, 0]).'"><i class="fa fa-square" data-toggle="tooltip" data-placement="top" title="'.trans('buttons.backend.access.users.deactivate').'"></i>'.$name.'</a>';
+                        return '<a class="'.$class.'" href="'.route('admincp.access.user.mark', [$this, 0]).'"><i class="fa fa-square" data-toggle="tooltip" data-placement="top" title="'.trans('buttons.backend.access.users.deactivate').'"></i>'.$name.'</a>';
                     }
                 // No break
 
@@ -176,7 +176,7 @@ trait UserAttribute
     public function getConfirmedButtonAttribute($class)
     {
         if (!$this->isConfirmed() && access()->allow('edit-user')) {
-            return '<a class="'.$class.'" href="'.route('admin.access.user.account.confirm.resend', $this).'"><i class="fa fa-refresh" data-toggle="tooltip" data-placement="top" title='.trans('buttons.backend.access.users.resend_email').'"></i></a> ';
+            return '<a class="'.$class.'" href="'.route('admincp.access.user.account.confirm.resend', $this).'"><i class="fa fa-refresh" data-toggle="tooltip" data-placement="top" title='.trans('buttons.backend.access.users.resend_email').'"></i></a> ';
         }
 
         return '';
@@ -190,7 +190,7 @@ trait UserAttribute
         if ($this->id != access()->id() && access()->allow('delete-user')) {
             $name = $class == '' ? 'Delete' : '';
 
-            return '<a class="'.$class.'" href="'.route('admin.access.user.destroy', $this).'"
+            return '<a class="'.$class.'" href="'.route('admincp.access.user.destroy', $this).'"
                  data-method="delete"
                  data-trans-button-cancel="'.trans('buttons.general.cancel').'"
                  data-trans-button-confirm="'.trans('buttons.general.crud.delete').'"
@@ -206,7 +206,7 @@ trait UserAttribute
     public function getRestoreButtonAttribute($class)
     {
         if (access()->allow('delete-user')) {
-            return '<a class="'.$class.'" href="'.route('admin.access.user.restore', $this).'" name="restore_user"><i class="fa fa-refresh" data-toggle="tooltip" data-placement="top" title="'.trans('buttons.backend.access.users.restore_user').'"></i></a> ';
+            return '<a class="'.$class.'" href="'.route('admincp.access.user.restore', $this).'" name="restore_user"><i class="fa fa-refresh" data-toggle="tooltip" data-placement="top" title="'.trans('buttons.backend.access.users.restore_user').'"></i></a> ';
         }
     }
 
@@ -215,7 +215,7 @@ trait UserAttribute
      */
     public function getDeletePermanentlyButtonAttribute($class)
     {
-        return '<a class="'.$class.'" href="'.route('admin.access.user.delete-permanently', $this).'" name="delete_user_perm"><i class="fa fa-trash" data-toggle="tooltip" data-placement="top" title="'.trans('buttons.backend.access.users.delete_permanently').'"></i></a> ';
+        return '<a class="'.$class.'" href="'.route('admincp.access.user.delete-permanently', $this).'" name="delete_user_perm"><i class="fa fa-trash" data-toggle="tooltip" data-placement="top" title="'.trans('buttons.backend.access.users.delete_permanently').'"></i></a> ';
     }
 
     /**
@@ -230,7 +230,7 @@ trait UserAttribute
         if (access()->allow('login-as-user') && (!session()->has('admin_user_id') || !session()->has('temp_user_id'))) {
             //Won't break, but don't let them "Login As" themselves
             if ($this->id != access()->id()) {
-                return '<a class="'.$class.'" href="'.route('admin.access.user.login-as',
+                return '<a class="'.$class.'" href="'.route('admincp.access.user.login-as',
                     $this).'"><i class="fa fa-lock" data-toggle="tooltip" data-placement="top" title="'.trans('buttons.backend.access.users.login_as',
                     ['user' => $this->name]).'"></i>'.$name.'</a>';
             }
@@ -247,7 +247,7 @@ trait UserAttribute
         $name = $class == '' ? 'Clear Session' : '';
 
         if ($this->id != access()->id() && config('session.driver') == 'database' && access()->allow('clear-user-session')) {
-            return '<a class="'.$class.'" href="'.route('admin.access.user.clear-session', $this).'"
+            return '<a class="'.$class.'" href="'.route('admincp.access.user.clear-session', $this).'"
 			 	 data-trans-button-cancel="'.trans('buttons.general.cancel').'"
                  data-trans-button-confirm="'.trans('buttons.general.continue').'"
                  data-trans-title="'.trans('strings.backend.general.are_you_sure').'"

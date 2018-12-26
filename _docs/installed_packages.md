@@ -1,0 +1,134 @@
+  - Installing symfony/polyfill-ctype (v1.10.0): Loading from cache
+  - Installing symfony/yaml (v4.2.1): Loading from cache
+  - Installing hassankhan/config (0.10.0): Downloading (100%)
+  - Installing codedungeon/phpunit-result-printer (0.4.4): Downloading (100%)
+  - Installing vlucas/phpdotenv (v2.5.1): Loading from cache
+  - Installing symfony/css-selector (v3.4.20): Downloading (100%)
+  - Installing tijsverkoyen/css-to-inline-styles (2.2.1): Loading from cache
+  - Installing symfony/polyfill-mbstring (v1.10.0): Loading from cache
+  - Installing symfony/var-dumper (v3.4.20): Downloading (100%)
+  - Installing symfony/routing (v3.4.20): Downloading (100%)
+  - Installing symfony/process (v3.4.20): Downloading (100%)
+  - Installing paragonie/random_compat (v9.99.99): Loading from cache
+  - Installing symfony/polyfill-php70 (v1.10.0): Downloading (100%)
+  - Installing symfony/http-foundation (v3.4.20): Downloading (100%)
+  - Installing symfony/contracts (v1.0.2): Loading from cache
+  - Installing symfony/event-dispatcher (v4.2.1): Loading from cache
+  - Installing psr/log (1.1.0): Loading from cache
+  - Installing symfony/debug (v3.4.20): Downloading (100%)
+  - Installing symfony/http-kernel (v3.4.20): Downloading (100%)
+  - Installing symfony/finder (v3.4.20): Downloading (100%)
+  - Installing symfony/console (v3.4.20): Downloading (100%)
+  - Installing doctrine/lexer (v1.0.1): Loading from cache
+  - Installing egulias/email-validator (2.1.7): Loading from cache
+  - Installing swiftmailer/swiftmailer (v6.1.3): Loading from cache
+  - Installing ramsey/uuid (3.8.0): Loading from cache
+  - Installing psr/simple-cache (1.0.1): Loading from cache
+  - Installing psr/container (1.0.0): Loading from cache
+  - Installing symfony/translation (v4.2.1): Loading from cache
+  - Installing nesbot/carbon (1.36.1): Downloading (100%)
+  - Installing mtdowling/cron-expression (v1.2.1): Downloading (100%)
+  - Installing monolog/monolog (1.24.0): Loading from cache
+  - Installing league/flysystem (1.0.49): Loading from cache
+  - Installing erusev/parsedown (1.7.1): Loading from cache
+  - Installing doctrine/inflector (v1.3.0): Loading from cache
+  - Installing laravel/framework (v5.5.44): Downloading (100%)
+  - Installing ralouphie/getallheaders (2.0.5): Loading from cache
+  - Installing psr/http-message (1.0.1): Loading from cache
+  - Installing guzzlehttp/psr7 (1.5.2): Loading from cache
+  - Installing guzzlehttp/promises (v1.3.1): Loading from cache
+  - Installing guzzlehttp/guzzle (6.3.3): Loading from cache
+  - Installing lcobucci/jwt (3.2.5): Loading from cache
+  - Installing infyomlabs/adminlte-templates (5.5.x-dev 48a2d5b): Downloading (100%)
+  - Installing laracasts/flash (3.0.2): Downloading (100%)
+  - Installing prettus/laravel-validation (1.1.5): Downloading (100%)
+  - Installing prettus/l5-repository (2.6.32): Downloading (100%)
+  - Installing infyomlabs/laravel-generator (5.5.x-dev 5a6ef61): Downloading (100%)
+  - Installing infyomlabs/swagger-generator (dev-master 06eaf59): Downloading (100%)
+  - Installing symfony/polyfill-util (v1.10.0): Loading from cache
+  - Installing symfony/polyfill-php56 (v1.10.0): Loading from cache
+  - Installing namshi/jose (7.2.3): Loading from cache
+  - Installing tymon/jwt-auth (dev-develop ef07317): Loading from cache
+  - Installing doctrine/event-manager (v1.0.0): Loading from cache
+  - Installing doctrine/cache (v1.8.0): Loading from cache
+  - Installing doctrine/dbal (v2.9.1): Loading from cache
+  - Installing xethron/laravel-4-generators (3.1.1): Downloading (100%)
+  - Installing xethron/migrations-generator (v2.0.2): Downloading (100%)
+  - Installing arcanedev/support (4.2.2): Downloading (100%)
+  - Installing arcanedev/log-viewer (4.4.4): Downloading (100%)
+  - Installing arcanedev/no-captcha (5.0.2): Downloading (100%)
+  - Installing symfony/filesystem (v4.2.1): Loading from cache
+  - Installing seld/phar-utils (1.0.1): Downloading (100%)
+  - Installing seld/jsonlint (1.7.1): Downloading (100%)
+  - Installing justinrainbow/json-schema (5.2.7): Downloading (100%)
+  - Installing composer/xdebug-handler (1.3.1): Downloading (100%)
+  - Installing composer/spdx-licenses (1.5.0): Downloading (100%)
+  - Installing composer/semver (1.4.2): Downloading (100%)
+  - Installing composer/ca-bundle (1.1.3): Downloading (100%)
+  - Installing composer/composer (1.8.0): Downloading (100%)
+  - Installing barryvdh/reflection-docblock (v2.0.6): Downloading (100%)
+  - Installing barryvdh/laravel-ide-helper (v2.5.3): Downloading (100%)
+  - Installing creativeorange/gravatar (v1.0.11): Downloading (100%)
+  - Installing davejamesmiller/laravel-breadcrumbs (4.2.0): Downloading (100%)
+  - Installing fideloper/proxy (3.3.4): Downloading (100%)
+  - Installing hieu-le/active (3.5.1): Downloading (100%)
+  - Installing sabre/uri (2.1.1): Downloading (100%)
+  - Installing sabre/xml (1.5.0): Downloading (100%)
+  - Installing cleverit/ubl_invoice (v1.0.2): Downloading (100%)
+  - Installing maximebf/debugbar (v1.15.0): Loading from cache
+  - Installing barryvdh/laravel-debugbar (v3.2.1): Downloading (100%)
+  - Installing bvipul/generator (0.9.3): Downloading (100%)
+  - Installing filp/whoops (2.3.1): Loading from cache
+  - Installing fzaninotto/faker (v1.8.0): Loading from cache
+  - Installing sebastian/version (2.0.1): Loading from cache
+  - Installing sebastian/resource-operations (1.0.0): Downloading (100%)
+  - Installing sebastian/object-reflector (1.1.1): Loading from cache
+  - Installing sebastian/recursion-context (3.0.0): Loading from cache
+  - Installing sebastian/object-enumerator (3.0.3): Loading from cache
+  - Installing sebastian/global-state (2.0.0): Loading from cache
+  - Installing sebastian/exporter (3.1.0): Loading from cache
+  - Installing sebastian/environment (3.1.0): Downloading (100%)
+  - Installing sebastian/diff (2.0.1): Downloading (100%)
+  - Installing sebastian/comparator (2.1.3): Downloading (100%)
+  - Installing doctrine/instantiator (1.1.0): Loading from cache
+  - Installing phpunit/php-text-template (1.2.1): Loading from cache
+  - Installing phpunit/phpunit-mock-objects (5.0.10): Downloading (100%)
+  - Installing phpunit/php-timer (1.0.9): Downloading (100%)
+  - Installing phpunit/php-file-iterator (1.4.5): Downloading (100%)
+  - Installing theseer/tokenizer (1.1.0): Loading from cache
+  - Installing sebastian/code-unit-reverse-lookup (1.0.1): Loading from cache
+  - Installing phpunit/php-token-stream (2.0.2): Downloading (100%)
+  - Installing phpunit/php-code-coverage (5.3.2): Downloading (100%)
+  - Installing webmozart/assert (1.4.0): Downloading (100%)
+  - Installing phpdocumentor/reflection-common (1.0.1): Loading from cache
+  - Installing phpdocumentor/type-resolver (0.4.0): Loading from cache
+  - Installing phpdocumentor/reflection-docblock (4.3.0): Loading from cache
+  - Installing phpspec/prophecy (1.8.0): Loading from cache
+  - Installing phar-io/version (1.0.1): Downloading (100%)
+  - Installing phar-io/manifest (1.0.1): Downloading (100%)
+  - Installing myclabs/deep-copy (1.8.1): Loading from cache
+  - Installing phpunit/phpunit (6.5.13): Downloading (100%)
+  - Installing symfony/dom-crawler (v3.4.20): Downloading (100%)
+  - Installing laravel/browser-kit-testing (v2.0.1): Downloading (100%)
+  - Installing hamcrest/hamcrest-php (v1.2.2): Downloading (100%)
+  - Installing mockery/mockery (0.9.10): Downloading (100%)
+  - Installing league/oauth1-client (1.7.0): Loading from cache
+  - Installing laravel/socialite (v3.2.0): Downloading (100%)
+  - Installing nikic/php-parser (v4.1.1): Downloading (100%)
+  - Installing jakub-onderka/php-console-color (v0.2): Loading from cache
+  - Installing jakub-onderka/php-console-highlighter (v0.4): Loading from cache
+  - Installing dnoegel/php-xdg-base-dir (0.1): Loading from cache
+  - Installing psy/psysh (v0.9.9): Loading from cache
+  - Installing laravel/tinker (v1.0.8): Loading from cache
+  - Installing nwidart/laravel-modules (4.0.0): Downloading (100%)
+  - Installing intervention/image (2.4.2): Loading from cache
+  - Installing unisharp/laravel-filemanager (v1.9.2): Loading from cache
+  - Installing markbaker/complex (1.4.7): Downloading (100%)
+  - Installing phpoffice/phpspreadsheet (1.5.2): Downloading (100%)
+  - Installing maatwebsite/excel (3.1.3): Downloading (100%)
+  - Installing laravelcollective/html (v5.5.4): Downloading (100%)
+  - Installing yajra/laravel-datatables-oracle (v8.13.1): Downloading (100%)
+  - Installing yajra/laravel-datatables-html (v3.13.0): Downloading (100%)
+  - Installing yajra/laravel-datatables-buttons (v4.5.0): Downloading (100%)
+  - Installing league/fractal (0.17.0): Loading from cache
+  - Installing yajra/laravel-datatables-fractal (v1.3.0): Downloading (100%)

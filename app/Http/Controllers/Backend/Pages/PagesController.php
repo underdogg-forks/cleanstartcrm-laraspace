@@ -56,7 +56,7 @@ class PagesController extends Controller
     {
         $this->pages->create($request->except(['_token']));
 
-        return redirect()->route('admin.pages.index')->withFlashSuccess(trans('alerts.backend.pages.created'));
+        return redirect()->route('admincp.pages.index')->withFlashSuccess(trans('alerts.backend.pages.created'));
     }
 
     /**
@@ -81,7 +81,7 @@ class PagesController extends Controller
     {
         $this->pages->update($page, $request->except(['_method', '_token']));
 
-        return redirect()->route('admin.pages.index')->withFlashSuccess(trans('alerts.backend.pages.updated'));
+        return redirect()->route('admincp.pages.index')->withFlashSuccess(trans('alerts.backend.pages.updated'));
     }
 
     /**
@@ -94,6 +94,6 @@ class PagesController extends Controller
     {
         $this->pages->delete($page);
 
-        return redirect()->route('admin.pages.index')->withFlashSuccess(trans('alerts.backend.pages.deleted'));
+        return redirect()->route('admincp.pages.index')->withFlashSuccess(trans('alerts.backend.pages.deleted'));
     }
 }

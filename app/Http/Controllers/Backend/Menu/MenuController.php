@@ -66,7 +66,7 @@ class MenuController extends Controller
     {
         $this->menu->create($request->except('_token'));
 
-        return redirect()->route('admin.menus.index')->withFlashSuccess(trans('alerts.backend.menus.created'));
+        return redirect()->route('admincp.menus.index')->withFlashSuccess(trans('alerts.backend.menus.created'));
     }
 
     /**
@@ -105,7 +105,7 @@ class MenuController extends Controller
         $this->menu->update($menu, $request->all());
 
         return redirect()
-            ->route('admin.menus.index')
+            ->route('admincp.menus.index')
             ->with('flash_success', trans('alerts.backend.menus.updated'));
     }
 
@@ -122,7 +122,7 @@ class MenuController extends Controller
         $this->menu->delete($menu);
 
         return redirect()
-            ->route('admin.menus.index')
+            ->route('admincp.menus.index')
             ->with('flash_success', trans('alerts.backend.menus.deleted'));
     }
 }

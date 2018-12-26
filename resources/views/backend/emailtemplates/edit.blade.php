@@ -30,7 +30,7 @@
 @endsection
 
 @section('content')
-    {{ Form::model($emailtemplate, ['route' => ['admin.emailtemplates.update', $emailtemplate], 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'PATCH', 'id' => 'edit-role']) }}
+    {{ Form::model($emailtemplate, ['route' => ['admincp.emailtemplates.update', $emailtemplate], 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'PATCH', 'id' => 'edit-role']) }}
 
         <div class="box box-info">
             <div class="box-header with-border">
@@ -96,7 +96,7 @@
                     </div><!--col-lg-3-->
                 </div><!--form control-->
                 <div class="edit-form-btn">
-                    {{ link_to_route('admin.emailtemplates.index', trans('buttons.general.cancel'), [], ['class' => 'btn btn-danger btn-md']) }}
+                    {{ link_to_route('admincp.emailtemplates.index', trans('buttons.general.cancel'), [], ['class' => 'btn btn-danger btn-md']) }}
                     <input type="button" id="showPreview" data-toggle="modal" data-target="#templatePreview" class="btn btn-info btn-md" value="{{ trans('buttons.general.preview') }}" />
                     {{ Form::submit(trans('buttons.general.crud.update'), ['class' => 'btn btn-primary btn-md']) }}
                     <div class="clearfix"></div>

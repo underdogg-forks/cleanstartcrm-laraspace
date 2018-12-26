@@ -1,16 +1,16 @@
 <?php
 
-Breadcrumbs::register('admin.access.permission.index', function ($breadcrumbs) {
-    $breadcrumbs->parent('admin.dashboard');
-    $breadcrumbs->push(trans('menus.backend.access.permissions.management'), route('admin.access.permission.index'));
+Breadcrumbs::register('admincp.access.permission.index', function ($breadcrumbs) {
+    $breadcrumbs->parent('admincp.dashboard');
+    $breadcrumbs->push(trans('menus.backend.access.permissions.management'), route('admincp.access.permission.index'));
 });
 
-Breadcrumbs::register('admin.access.permission.create', function ($breadcrumbs) {
-    $breadcrumbs->parent('admin.access.permission.index');
-    $breadcrumbs->push(trans('menus.backend.access.permissions.create'), route('admin.access.permission.create'));
+Breadcrumbs::register('admincp.access.permission.create', function ($breadcrumbs) {
+    $breadcrumbs->parent('admincp.access.permission.index');
+    $breadcrumbs->push(trans('menus.backend.access.permissions.create'), route('admincp.access.permission.create'));
 });
 
-Breadcrumbs::register('admin.access.permission.edit', function ($breadcrumbs, $id) {
-    $breadcrumbs->parent('admin.access.permission.index');
-    $breadcrumbs->push(trans('menus.backend.access.permissions.edit'), route('admin.access.permission.edit', $id));
+Breadcrumbs::register('admincp.access.permission.edit', function ($breadcrumbs, $id) {
+    $breadcrumbs->parent('admincp.access.permission.index');
+    $breadcrumbs->push(trans('menus.backend.access.permissions.edit'), route('admincp.access.permission.edit', $id));
 });

@@ -62,7 +62,7 @@ class FaqsController extends Controller
         $this->faq->create($input);
 
         return redirect()
-            ->route('admin.faqs.index')
+            ->route('admincp.faqs.index')
             ->with('flash_success', trans('alerts.backend.faqs.created'));
     }
 
@@ -95,7 +95,7 @@ class FaqsController extends Controller
         $this->faq->update($faq, $input);
 
         return redirect()
-            ->route('admin.faqs.index')
+            ->route('admincp.faqs.index')
             ->with('flash_success', trans('alerts.backend.faqs.updated'));
     }
 
@@ -112,7 +112,7 @@ class FaqsController extends Controller
         $this->faq->delete($faq);
 
         return redirect()
-            ->route('admin.faqs.index')
+            ->route('admincp.faqs.index')
             ->with('flash_success', trans('alerts.backend.faqs.deleted'));
     }
 }

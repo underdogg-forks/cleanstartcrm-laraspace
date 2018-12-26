@@ -57,7 +57,7 @@ class BlogCategoriesController extends Controller
         $this->blogcategory->create($request->all());
 
         return redirect()
-            ->route('admin.blogCategories.index')
+            ->route('admincp.blogCategories.index')
             ->with('flash_success', trans('alerts.backend.blogcategories.created'));
     }
 
@@ -84,7 +84,7 @@ class BlogCategoriesController extends Controller
         $this->blogcategory->update($blogCategory, $request->all());
 
         return redirect()
-            ->route('admin.blogCategories.index')
+            ->route('admincp.blogCategories.index')
             ->with('flash_success', trans('alerts.backend.blogcategories.updated'));
     }
 
@@ -99,7 +99,7 @@ class BlogCategoriesController extends Controller
         $this->blogcategory->delete($blogCategory);
 
         return redirect()
-            ->route('admin.blogCategories.index')
+            ->route('admincp.blogCategories.index')
             ->with('flash_success', trans('alerts.backend.blogcategories.deleted'));
     }
 }

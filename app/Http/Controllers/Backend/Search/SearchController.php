@@ -19,7 +19,7 @@ class SearchController extends Controller
     {
         if (!$request->filled('q')) {
             return redirect()
-                ->route('admin.dashboard')
+                ->route('admincp.dashboard')
                 ->withFlashDanger(trans('strings.backend.search.empty'));
         }
 
