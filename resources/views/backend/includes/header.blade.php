@@ -18,13 +18,83 @@
             {{-- @endif --}}
         </span>
     </a>
+    <nav class="topbar-nav" role="navigation">
 
-    <nav class="navbar navbar-static-top" role="navigation">
-        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-            <span class="sr-only">{{ trans('labels.general.toggle_navigation') }}</span>
-        </a>
+        <div class="pull-left">
 
-        <div class="navbar-custom-menu">
+            <ul class="metismenu" id="menu1">
+                <li>
+                    <a class="has-arrow" href="#">
+                        <span class="fa fa-fw fa-github fa-lg"></span>
+                        metisMenu
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/onokumus/metisMenu">
+                                <span class="fa fa-fw fa-code-fork"></span> Fork
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/onokumus/metisMenu">
+                                <span class="fa fa-fw fa-star"></span> Star
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/onokumus/metisMenu/issues">
+                                <span class="fa fa-fw fa-exclamation-triangle"></span> Issues
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="has-arrow" href="#" aria-expanded="false">Menu 0</a>
+                    <ul>
+                        <li><a href="#">item 0.1</a></li>
+                        <li><a href="#">item 0.2</a></li>
+                        <li><a href="http://onokumus.com">onokumus</a></li>
+                        <li><a href="#">item 0.4</a></li>
+                    </ul>
+                </li>
+                <li id="removable">
+                    <a class="has-arrow" href="#" aria-expanded="false">Menu 1</a>
+                    <ul>
+                        <li><a href="#">item 1.1</a></li>
+                        <li><a href="#">item 1.2</a></li>
+                        <li>
+                            <a class="has-arrow" href="#" aria-expanded="false">Menu 1.3</a>
+                            <ul>
+                                <li><a href="#">item 1.3.1</a></li>
+                                <li><a href="#">item 1.3.2</a></li>
+                                <li><a href="#">item 1.3.3</a></li>
+                                <li><a href="#">item 1.3.4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">item 1.4</a></li>
+                        <li>
+                            <a class="has-arrow" href="#" aria-expanded="false">Menu 1.5</a>
+                            <ul>
+                                <li><a href="#">item 1.5.1</a></li>
+                                <li><a href="#">item 1.5.2</a></li>
+                                <li><a href="#">item 1.5.3</a></li>
+                                <li><a href="#">item 1.5.4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="has-arrow" href="#" aria-expanded="false">Menu 2</a>
+                    <ul>
+                        <li><a href="#">item 2.1</a></li>
+                        <li><a href="#">item 2.2</a></li>
+                        <li><a href="#">item 2.3</a></li>
+                        <li><a href="#">item 2.4</a></li>
+                    </ul>
+                </li>
+                <li>temp</li>
+            </ul>
+        </div>
+
+        <div class="navbar-custom-menu pull-right">
             <ul class="nav navbar-nav">
 
                 @if (config('locale.status') && count(config('locale.languages')) > 1)
@@ -132,5 +202,10 @@
                 </li>
             </ul>
         </div><!-- /.navbar-custom-menu -->
+    </nav>
+    <nav class="navbar navbar-static-top">
+        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">{{ trans('labels.general.toggle_navigation') }}</span>
+        </a>
     </nav>
 </header>
