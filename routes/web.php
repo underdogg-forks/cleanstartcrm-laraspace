@@ -7,6 +7,10 @@
 
 // Switch between the included languages
 Route::get('lang/{lang}', 'LanguageController@swap');
+//Route::get('theme/{theme}', 'ThemesController@switch');
+//Route::get('company/{company}', 'CompaniesController@switch');
+
+require 'Notifications.php';
 
 /* ----------------------------------------------------------------------- */
 

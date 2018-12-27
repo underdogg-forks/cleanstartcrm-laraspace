@@ -1,8 +1,13 @@
 {
-    "/js/frontend.js": "/js/frontend.js?id=9a53ac07c249ebed3144",
-    "/css/frontend.css": "/css/frontend.css?id=3cfee58a71def420c84b",
-    "/css/backend.css": "/css/backend.css?id=527fac28c141cfbc5999",
-    "/js/backend.js": "/js/backend.js?id=6fb3761b9c3593ee430a",
+    "/assets/admin/js/core/app.js": "/assets/admin/js/core/app.js?id=3510b7ca54544e5fc606",
+    "/assets/admin/css/laraspace.css": "/assets/admin/css/laraspace.css?id=f946a290edf3a615d4f1",
+    "/assets/front/css/front.css": "/assets/front/css/front.css?id=b67b4819c0110acea518",
+    "/css/frontend.css": "/css/frontend.css?id=e667d26565e8f8672edb",
+    "/css/backend.css": "/css/backend.css?id=dffe4e750c7d29bc6bc3",
+    "/js/frontend.js": "/js/frontend.js?id=2279622cd55328c46050",
+    "/js/backend.js": "/js/backend.js?id=2a2b1818346a587d3724",
+    "/assets/admin/js/core/plugins.js": "/assets/admin/js/core/plugins.js?id=140de1d6c5ff53d10ceb",
+    "/assets/front/js/plugins.js": "/assets/front/js/plugins.js?id=a544fdcc0da4cb298e85",
     "/css/backend-custom.css": "/css/backend-custom.css?id=8526e1125923c841a08c",
     "/js/backend-custom.js": "/js/backend-custom.js?id=e838a6ad148214c9b520",
     "/js/dataTable.js": "/js/dataTable.js?id=c199e0e43a558a44a2d4"

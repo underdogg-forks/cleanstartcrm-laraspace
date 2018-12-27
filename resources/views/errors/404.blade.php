@@ -1,59 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>{{ trans('http.404.title') }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <style>
-        * {
-            line-height: 1.2;
-            margin: 0;
-        }
-
-        html {
-            color: #888;
-            display: table;
-            font-family: sans-serif;
-            height: 100%;
-            text-align: center;
-            width: 100%;
-        }
-
-        body {
-            display: table-cell;
-            vertical-align: middle;
-            margin: 2em auto;
-        }
-
-        h1 {
-            color: #555;
-            font-size: 2em;
-            font-weight: 400;
-        }
-
-        p {
-            margin: 0 auto;
-            width: 280px;
-        }
-
-        @media only screen and (max-width: 280px) {
-
-            body, p {
-                width: 95%;
-            }
-
-            h1 {
-                font-size: 1.5em;
-                margin: 0 0 0.3em;
-            }
-
-        }
-    </style>
+    <title>Laraspace - Laravel Admin</title>
+    <script src="{{asset('/assets/admin/js/core/pace.js')}}"></script>
+    <link href="{{ mix('/assets/admin/css/laraspace.css') }}" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    @include('admin.layouts.partials.favicons')
 </head>
-<body>
-<h1>{{ trans('http.404.title') }}</h1>
-<p>{{ trans('http.404.description') }}</p>
+<body id="app" class="page-error-404">
+    <header class="site-header">
+        <a href="#" class="brand-main">
+            <img src="{{asset('/assets/admin/img/logo-desk.png')}}" id="logo-desk" alt="Laraspace Logo" class="d-none d-md-inline ">
+            <img src="{{asset('/assets/admin/img/logo-mobile.png')}}" id="logo-mobile" alt="Laraspace Logo" class="d-md-none">
+        </a>
+        <a href="#" class="nav-toggle">
+            <div class="hamburger hamburger--htla">
+                <span>toggle menu</span>
+            </div>
+        </a>
+    </header>
+    <div class="error-box">
+        <div class="row">
+            <div class="col-sm-12 text-sm-center">
+                <h1>404</h1>
+                <h5>Whoops! You got Lost!</h5>
+                <a class="btn btn-lg bg-yellow" href="/"> <i class="icon-fa icon-fa-arrow-left"></i> Go Back</a>
+            </div>
+        </div>
+    </div>
+    <script src="{{mix('/assets/admin/js/core/plugins.js')}}"></script>
+    @yield('scripts')
 </body>
 </html>
-<!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->
